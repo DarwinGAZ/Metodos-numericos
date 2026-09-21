@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metodos-raizes"
+version = "1.0.0"
+description = "Métodos numéricos para determinação de raízes reslução do problema das vigas"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+notebook = ["jupyter", "pandas", "matplotlib"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
